@@ -59,8 +59,8 @@ namespace BackendNET.CSD
             }
 
 
-
         }
+
         [HttpPost("verificarSesion")]
         public async Task<string> verificarSesion(string token)
         {
