@@ -12,71 +12,67 @@ namespace MiReferencia
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://SOAP/", ConfigurationName="MiReferencia.Service")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://soap/", ConfigurationName="MiReferencia.Service")]
     public interface Service
     {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/registerRequest", ReplyAction="http://SOAP/Service/registerResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/registerRequest", ReplyAction="http://soap/Service/registerResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.registerResponse> registerAsync(MiReferencia.registerRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/deleteFolderRequest", ReplyAction="http://SOAP/Service/deleteFolderResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<MiReferencia.deleteFolderResponse> deleteFolderAsync(MiReferencia.deleteFolderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/deleteFileRequest", ReplyAction="http://SOAP/Service/deleteFileResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<MiReferencia.deleteFileResponse> deleteFileAsync(MiReferencia.deleteFileRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/loginRequest", ReplyAction="http://SOAP/Service/loginResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/loginRequest", ReplyAction="http://soap/Service/loginResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.loginResponse> loginAsync(MiReferencia.loginRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/createFolderRequest", ReplyAction="http://SOAP/Service/createFolderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/verifySessionRequest", ReplyAction="http://soap/Service/verifySessionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> verifySessionAsync(MiReferencia.verifySessionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/createFolderRequest", ReplyAction="http://soap/Service/createFolderResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.createFolderResponse> createFolderAsync(MiReferencia.createFolderRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/uploadFileRequest", ReplyAction="http://SOAP/Service/uploadFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/uploadFileRequest", ReplyAction="http://soap/Service/uploadFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.uploadFileResponse> uploadFileAsync(MiReferencia.uploadFileRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/downloadFileRequest", ReplyAction="http://SOAP/Service/downloadFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/downloadFileRequest", ReplyAction="http://soap/Service/downloadFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.downloadFileResponse> downloadFileAsync(MiReferencia.downloadFileRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/moveFileRequest", ReplyAction="http://SOAP/Service/moveFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/deleteFileRequest", ReplyAction="http://soap/Service/deleteFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<MiReferencia.moveFileResponse> moveFileAsync(MiReferencia.moveFileRequest request);
+        System.Threading.Tasks.Task<MiReferencia.deleteFileResponse> deleteFileAsync(MiReferencia.deleteFileRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/stopSharingFileRequest", ReplyAction="http://SOAP/Service/stopSharingFileResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<MiReferencia.stopSharingFileResponse> stopSharingFileAsync(MiReferencia.stopSharingFileRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/getUserFilesRequest", ReplyAction="http://SOAP/Service/getUserFilesResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/getUserFilesRequest", ReplyAction="http://soap/Service/getUserFilesResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.getUserFilesResponse> getUserFilesAsync(MiReferencia.getUserFilesRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/shareFileRequest", ReplyAction="http://SOAP/Service/shareFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/deleteFolderRequest", ReplyAction="http://soap/Service/deleteFolderResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<MiReferencia.deleteFolderResponse> deleteFolderAsync(MiReferencia.deleteFolderRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/shareFileRequest", ReplyAction="http://soap/Service/shareFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.shareFileResponse> shareFileAsync(MiReferencia.shareFileRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/seeStorageTreeRequest", ReplyAction="http://SOAP/Service/seeStorageTreeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/stopSharingFileRequest", ReplyAction="http://soap/Service/stopSharingFileResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<MiReferencia.stopSharingFileResponse> stopSharingFileAsync(MiReferencia.stopSharingFileRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/moveFileRequest", ReplyAction="http://soap/Service/moveFileResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<MiReferencia.moveFileResponse> moveFileAsync(MiReferencia.moveFileRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/seeStorageTreeRequest", ReplyAction="http://soap/Service/seeStorageTreeResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.seeStorageTreeResponse> seeStorageTreeAsync(MiReferencia.seeStorageTreeRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/registerUserDBRequest", ReplyAction="http://SOAP/Service/registerUserDBResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<MiReferencia.registerUserDBResponse> registerUserDBAsync(MiReferencia.registerUserDBRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://SOAP/Service/verifySessionRequest", ReplyAction="http://SOAP/Service/verifySessionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> verifySessionAsync(MiReferencia.verifySessionRequest request);
     }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://SOAP/")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://soap/")]
     public partial class user
     {
         
@@ -87,8 +83,6 @@ namespace MiReferencia
         private string emailField;
         
         private string passwordField;
-        
-        private int idField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -145,26 +139,12 @@ namespace MiReferencia
                 this.passwordField = value;
             }
         }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public int id
-        {
-            get
-            {
-                return this.idField;
-            }
-            set
-            {
-                this.idField = value;
-            }
-        }
     }
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://SOAP/")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://soap/")]
     public partial class file
     {
         
@@ -174,7 +154,7 @@ namespace MiReferencia
         
         private string pathField;
         
-        private double file1Field;
+        private byte[] fileDataField;
         
         private double sizeField;
         
@@ -227,16 +207,16 @@ namespace MiReferencia
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("file", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public double file1
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=3)]
+        public byte[] fileData
         {
             get
             {
-                return this.file1Field;
+                return this.fileDataField;
             }
             set
             {
-                this.file1Field = value;
+                this.fileDataField = value;
             }
         }
         
@@ -300,7 +280,7 @@ namespace MiReferencia
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://SOAP/")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://soap/")]
     public partial class folder
     {
         
@@ -388,7 +368,7 @@ namespace MiReferencia
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://SOAP/")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://soap/")]
     public partial class response
     {
         
@@ -397,6 +377,8 @@ namespace MiReferencia
         private string detailsField;
         
         private string jsonField;
+        
+        private byte[] fileDataField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -439,16 +421,30 @@ namespace MiReferencia
                 this.jsonField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", Order=3)]
+        public byte[] fileData
+        {
+            get
+            {
+                return this.fileDataField;
+            }
+            set
+            {
+                this.fileDataField = value;
+            }
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="register", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="register", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class registerRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.user arg0;
         
@@ -465,11 +461,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registerResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="registerResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class registerResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
@@ -486,95 +482,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFolder", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class deleteFolderRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public MiReferencia.folder arg0;
-        
-        public deleteFolderRequest()
-        {
-        }
-        
-        public deleteFolderRequest(MiReferencia.folder arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFolderResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class deleteFolderResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public MiReferencia.response @return;
-        
-        public deleteFolderResponse()
-        {
-        }
-        
-        public deleteFolderResponse(MiReferencia.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFile", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class deleteFileRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public MiReferencia.file arg0;
-        
-        public deleteFileRequest()
-        {
-        }
-        
-        public deleteFileRequest(MiReferencia.file arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFileResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class deleteFileResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public MiReferencia.response @return;
-        
-        public deleteFileResponse()
-        {
-        }
-        
-        public deleteFileResponse(MiReferencia.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="login", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="login", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class loginRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.user arg0;
         
@@ -591,11 +503,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="loginResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="loginResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class loginResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
@@ -612,11 +524,53 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="createFolder", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verifySession", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class verifySessionRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string arg0;
+        
+        public verifySessionRequest()
+        {
+        }
+        
+        public verifySessionRequest(string arg0)
+        {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verifySessionResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class verifySessionResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public MiReferencia.response @return;
+        
+        public verifySessionResponse()
+        {
+        }
+        
+        public verifySessionResponse(MiReferencia.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="createFolder", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class createFolderRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.folder arg0;
         
@@ -633,11 +587,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="createFolderResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="createFolderResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class createFolderResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
@@ -654,11 +608,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="uploadFile", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="uploadFile", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class uploadFileRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.file arg0;
         
@@ -675,11 +629,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="uploadFileResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="uploadFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class uploadFileResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
@@ -696,11 +650,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="downloadFile", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="downloadFile", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class downloadFileRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.file arg0;
         
@@ -717,11 +671,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="downloadFileResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="downloadFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class downloadFileResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
@@ -738,66 +692,19 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="moveFile", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class moveFileRequest
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFile", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class deleteFileRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg0;
+        public MiReferencia.file arg0;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg1;
-        
-        public moveFileRequest()
+        public deleteFileRequest()
         {
         }
         
-        public moveFileRequest(string arg0, int arg1)
-        {
-            this.arg0 = arg0;
-            this.arg1 = arg1;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="moveFileResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class moveFileResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public MiReferencia.response @return;
-        
-        public moveFileResponse()
-        {
-        }
-        
-        public moveFileResponse(MiReferencia.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="stopSharingFile", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class stopSharingFileRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
-        
-        public stopSharingFileRequest()
-        {
-        }
-        
-        public stopSharingFileRequest(int arg0)
+        public deleteFileRequest(MiReferencia.file arg0)
         {
             this.arg0 = arg0;
         }
@@ -806,19 +713,19 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="stopSharingFileResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class stopSharingFileResponse
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class deleteFileResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
-        public stopSharingFileResponse()
+        public deleteFileResponse()
         {
         }
         
-        public stopSharingFileResponse(MiReferencia.response @return)
+        public deleteFileResponse(MiReferencia.response @return)
         {
             this.@return = @return;
         }
@@ -827,11 +734,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getUserFiles", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getUserFiles", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class getUserFilesRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int arg0;
         
@@ -848,11 +755,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getUserFilesResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getUserFilesResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class getUserFilesResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
@@ -869,15 +776,57 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="shareFile", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFolder", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class deleteFolderRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public MiReferencia.folder arg0;
+        
+        public deleteFolderRequest()
+        {
+        }
+        
+        public deleteFolderRequest(MiReferencia.folder arg0)
+        {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFolderResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class deleteFolderResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public MiReferencia.response @return;
+        
+        public deleteFolderResponse()
+        {
+        }
+        
+        public deleteFolderResponse(MiReferencia.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="shareFile", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class shareFileRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int arg0;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=1)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int arg1;
         
@@ -895,11 +844,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="shareFileResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="shareFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class shareFileResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
@@ -916,11 +865,105 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="seeStorageTree", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="stopSharingFile", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class stopSharingFileRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public stopSharingFileRequest()
+        {
+        }
+        
+        public stopSharingFileRequest(int arg0)
+        {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="stopSharingFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class stopSharingFileResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public MiReferencia.response @return;
+        
+        public stopSharingFileResponse()
+        {
+        }
+        
+        public stopSharingFileResponse(MiReferencia.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="moveFile", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class moveFileRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string arg1;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string arg2;
+        
+        public moveFileRequest()
+        {
+        }
+        
+        public moveFileRequest(int arg0, string arg1, string arg2)
+        {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+            this.arg2 = arg2;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="moveFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class moveFileResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public MiReferencia.response @return;
+        
+        public moveFileResponse()
+        {
+        }
+        
+        public moveFileResponse(MiReferencia.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="seeStorageTree", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class seeStorageTreeRequest
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int arg0;
         
@@ -937,11 +980,11 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="seeStorageTreeResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="seeStorageTreeResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class seeStorageTreeResponse
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public MiReferencia.response @return;
         
@@ -950,90 +993,6 @@ namespace MiReferencia
         }
         
         public seeStorageTreeResponse(MiReferencia.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registerUserDB", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class registerUserDBRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public MiReferencia.user arg0;
-        
-        public registerUserDBRequest()
-        {
-        }
-        
-        public registerUserDBRequest(MiReferencia.user arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="registerUserDBResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class registerUserDBResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int @return;
-        
-        public registerUserDBResponse()
-        {
-        }
-        
-        public registerUserDBResponse(int @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="verifySession", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class verifySessionRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg0;
-        
-        public verifySessionRequest()
-        {
-        }
-        
-        public verifySessionRequest(string arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="verifySessionResponse", WrapperNamespace="http://SOAP/", IsWrapped=true)]
-    public partial class verifySessionResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://SOAP/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public MiReferencia.response @return;
-        
-        public verifySessionResponse()
-        {
-        }
-        
-        public verifySessionResponse(MiReferencia.response @return)
         {
             this.@return = @return;
         }
@@ -1103,32 +1062,6 @@ namespace MiReferencia
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MiReferencia.deleteFolderResponse> MiReferencia.Service.deleteFolderAsync(MiReferencia.deleteFolderRequest request)
-        {
-            return base.Channel.deleteFolderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<MiReferencia.deleteFolderResponse> deleteFolderAsync(MiReferencia.folder arg0)
-        {
-            MiReferencia.deleteFolderRequest inValue = new MiReferencia.deleteFolderRequest();
-            inValue.arg0 = arg0;
-            return ((MiReferencia.Service)(this)).deleteFolderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MiReferencia.deleteFileResponse> MiReferencia.Service.deleteFileAsync(MiReferencia.deleteFileRequest request)
-        {
-            return base.Channel.deleteFileAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<MiReferencia.deleteFileResponse> deleteFileAsync(MiReferencia.file arg0)
-        {
-            MiReferencia.deleteFileRequest inValue = new MiReferencia.deleteFileRequest();
-            inValue.arg0 = arg0;
-            return ((MiReferencia.Service)(this)).deleteFileAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<MiReferencia.loginResponse> MiReferencia.Service.loginAsync(MiReferencia.loginRequest request)
         {
             return base.Channel.loginAsync(request);
@@ -1139,6 +1072,19 @@ namespace MiReferencia
             MiReferencia.loginRequest inValue = new MiReferencia.loginRequest();
             inValue.arg0 = arg0;
             return ((MiReferencia.Service)(this)).loginAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> MiReferencia.Service.verifySessionAsync(MiReferencia.verifySessionRequest request)
+        {
+            return base.Channel.verifySessionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> verifySessionAsync(string arg0)
+        {
+            MiReferencia.verifySessionRequest inValue = new MiReferencia.verifySessionRequest();
+            inValue.arg0 = arg0;
+            return ((MiReferencia.Service)(this)).verifySessionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1181,30 +1127,16 @@ namespace MiReferencia
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MiReferencia.moveFileResponse> MiReferencia.Service.moveFileAsync(MiReferencia.moveFileRequest request)
+        System.Threading.Tasks.Task<MiReferencia.deleteFileResponse> MiReferencia.Service.deleteFileAsync(MiReferencia.deleteFileRequest request)
         {
-            return base.Channel.moveFileAsync(request);
+            return base.Channel.deleteFileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<MiReferencia.moveFileResponse> moveFileAsync(string arg0, int arg1)
+        public System.Threading.Tasks.Task<MiReferencia.deleteFileResponse> deleteFileAsync(MiReferencia.file arg0)
         {
-            MiReferencia.moveFileRequest inValue = new MiReferencia.moveFileRequest();
+            MiReferencia.deleteFileRequest inValue = new MiReferencia.deleteFileRequest();
             inValue.arg0 = arg0;
-            inValue.arg1 = arg1;
-            return ((MiReferencia.Service)(this)).moveFileAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MiReferencia.stopSharingFileResponse> MiReferencia.Service.stopSharingFileAsync(MiReferencia.stopSharingFileRequest request)
-        {
-            return base.Channel.stopSharingFileAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<MiReferencia.stopSharingFileResponse> stopSharingFileAsync(int arg0)
-        {
-            MiReferencia.stopSharingFileRequest inValue = new MiReferencia.stopSharingFileRequest();
-            inValue.arg0 = arg0;
-            return ((MiReferencia.Service)(this)).stopSharingFileAsync(inValue);
+            return ((MiReferencia.Service)(this)).deleteFileAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1218,6 +1150,19 @@ namespace MiReferencia
             MiReferencia.getUserFilesRequest inValue = new MiReferencia.getUserFilesRequest();
             inValue.arg0 = arg0;
             return ((MiReferencia.Service)(this)).getUserFilesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<MiReferencia.deleteFolderResponse> MiReferencia.Service.deleteFolderAsync(MiReferencia.deleteFolderRequest request)
+        {
+            return base.Channel.deleteFolderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<MiReferencia.deleteFolderResponse> deleteFolderAsync(MiReferencia.folder arg0)
+        {
+            MiReferencia.deleteFolderRequest inValue = new MiReferencia.deleteFolderRequest();
+            inValue.arg0 = arg0;
+            return ((MiReferencia.Service)(this)).deleteFolderAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1235,6 +1180,34 @@ namespace MiReferencia
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<MiReferencia.stopSharingFileResponse> MiReferencia.Service.stopSharingFileAsync(MiReferencia.stopSharingFileRequest request)
+        {
+            return base.Channel.stopSharingFileAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<MiReferencia.stopSharingFileResponse> stopSharingFileAsync(int arg0)
+        {
+            MiReferencia.stopSharingFileRequest inValue = new MiReferencia.stopSharingFileRequest();
+            inValue.arg0 = arg0;
+            return ((MiReferencia.Service)(this)).stopSharingFileAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<MiReferencia.moveFileResponse> MiReferencia.Service.moveFileAsync(MiReferencia.moveFileRequest request)
+        {
+            return base.Channel.moveFileAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<MiReferencia.moveFileResponse> moveFileAsync(int arg0, string arg1, string arg2)
+        {
+            MiReferencia.moveFileRequest inValue = new MiReferencia.moveFileRequest();
+            inValue.arg0 = arg0;
+            inValue.arg1 = arg1;
+            inValue.arg2 = arg2;
+            return ((MiReferencia.Service)(this)).moveFileAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         System.Threading.Tasks.Task<MiReferencia.seeStorageTreeResponse> MiReferencia.Service.seeStorageTreeAsync(MiReferencia.seeStorageTreeRequest request)
         {
             return base.Channel.seeStorageTreeAsync(request);
@@ -1245,32 +1218,6 @@ namespace MiReferencia
             MiReferencia.seeStorageTreeRequest inValue = new MiReferencia.seeStorageTreeRequest();
             inValue.arg0 = arg0;
             return ((MiReferencia.Service)(this)).seeStorageTreeAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MiReferencia.registerUserDBResponse> MiReferencia.Service.registerUserDBAsync(MiReferencia.registerUserDBRequest request)
-        {
-            return base.Channel.registerUserDBAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<MiReferencia.registerUserDBResponse> registerUserDBAsync(MiReferencia.user arg0)
-        {
-            MiReferencia.registerUserDBRequest inValue = new MiReferencia.registerUserDBRequest();
-            inValue.arg0 = arg0;
-            return ((MiReferencia.Service)(this)).registerUserDBAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> MiReferencia.Service.verifySessionAsync(MiReferencia.verifySessionRequest request)
-        {
-            return base.Channel.verifySessionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> verifySessionAsync(string arg0)
-        {
-            MiReferencia.verifySessionRequest inValue = new MiReferencia.verifySessionRequest();
-            inValue.arg0 = arg0;
-            return ((MiReferencia.Service)(this)).verifySessionAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
@@ -1296,7 +1243,7 @@ namespace MiReferencia
         {
             if ((endpointConfiguration == EndpointConfiguration.ServicePort))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost:1802/app");
+                return new System.ServiceModel.EndpointAddress("http://java.bucaramanga.upb.edu.co:2376/app");
             }
             throw new System.InvalidOperationException(string.Format("No se pudo encontrar un punto de conexión con el nombre \"{0}\".", endpointConfiguration));
         }

@@ -5,53 +5,66 @@ namespace BackendNET.CSD
 {
     [ApiController]
     [Route("api/")]
-    public class Metodos:ControllerBase
+    public class Metodos : ControllerBase
     {
         [HttpPost("registro")]
         public async Task<string> Registro(user User)
         {
+            response res = new response();
             registerResponse usuarioRespuesta = new registerResponse();
             MiReferencia.ServiceClient oRegistro = new MiReferencia.ServiceClient();
             usuarioRespuesta = await oRegistro.registerAsync(User);
 
-            if (usuarioRespuesta.@return.statusCode == 201)
+            if (usuarioRespuesta != null)
             {
-                return ("Usuario registrado exitosamente");
+                res = usuarioRespuesta.@return;
 
-            }
-            else if (usuarioRespuesta.@return.statusCode == 400)
-            {
-                return (usuarioRespuesta.@return.details);
+                if (res.statusCode == 201)
+                {
+                    if (!string.IsNullOrEmpty(res.json))
+                    {
+                        return res.json;
+                    }
+                    else
+                    {
+                        return "El ID del usuario no se proporcionó en la respuesta.";
+                    }
+                }
+                else if (res.statusCode == 503)
+                {
+                    return res.details;
+                }
+                else
+                {
+                    return "Respuesta inesperada";
+                }
             }
             else
             {
-                return ("Respuesta inesperada");
+                return "No se pudo obtener una respuesta del servicio.";
             }
-
-
 
         }
 
         [HttpPost("login")]
         public async Task<string> Login(user User)
         {
+            response res = new response();
 
             loginResponse usuarioRespuesta = new loginResponse();
             MiReferencia.ServiceClient oRegistro = new MiReferencia.ServiceClient();
             usuarioRespuesta = await oRegistro.loginAsync(User);
-            string token;
-            token = usuarioRespuesta.@return.json;
 
+            res = usuarioRespuesta.@return;
 
-            if (usuarioRespuesta.@return.statusCode == 201)
+            if (res.statusCode == 202)
             {
-                Console.WriteLine("Ingreso exitoso");
-                return (token);
+                return ("Ingreso exitoso");
 
             }
-            else if (usuarioRespuesta.@return.statusCode == 400)
+            else if (res.statusCode == 400)
             {
-                return (usuarioRespuesta.@return.details);
+                return (res.details);
             }
             else
             {
@@ -69,7 +82,7 @@ namespace BackendNET.CSD
             usuarioRespuesta = await oRegistro.verifySessionAsync(token);
 
 
-            if (usuarioRespuesta.@return.statusCode == 201)
+            if (usuarioRespuesta.@return.statusCode == 202)
             {
                 return (usuarioRespuesta.@return.json);
 
@@ -140,11 +153,11 @@ namespace BackendNET.CSD
         }
 
         [HttpPut("moverArchivo")]
-        public async Task<string> moverArchivo(string ruta, int idArchivo)
+        public async Task<string> moverArchivo(int idArchivo, string rutaAnterior, string rutaActual)
         {
             moveFileResponse usuarioRespuesta = new moveFileResponse();
             MiReferencia.ServiceClient oRegistro = new MiReferencia.ServiceClient();
-            usuarioRespuesta = await oRegistro.moveFileAsync(ruta, idArchivo);
+            usuarioRespuesta = await oRegistro.moveFileAsync(idArchivo,rutaAnterior,rutaActual);
 
             if (usuarioRespuesta.@return.statusCode == 201)
             {

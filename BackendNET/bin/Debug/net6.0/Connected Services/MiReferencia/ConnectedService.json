@@ -1,7 +1,7 @@
 {
   "ExtendedData": {
     "inputs": [
-      "http://localhost:1802/app?wsdl"
+      "http://java.bucaramanga.upb.edu.co:2376/app?wsdl"
     ],
     "collectionTypes": [
       "System.Array",
