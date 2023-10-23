@@ -24,10 +24,6 @@ namespace MiReferencia
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.loginResponse> loginAsync(MiReferencia.loginRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/verifySessionRequest", ReplyAction="http://soap/Service/verifySessionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> verifySessionAsync(MiReferencia.verifySessionRequest request);
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/createFolderRequest", ReplyAction="http://soap/Service/createFolderResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.createFolderResponse> createFolderAsync(MiReferencia.createFolderRequest request);
@@ -67,6 +63,10 @@ namespace MiReferencia
         [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/seeStorageTreeRequest", ReplyAction="http://soap/Service/seeStorageTreeResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<MiReferencia.seeStorageTreeResponse> seeStorageTreeAsync(MiReferencia.seeStorageTreeRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/verifySessionRequest", ReplyAction="http://soap/Service/verifySessionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> verifySessionAsync(MiReferencia.verifySessionRequest request);
     }
     
     /// <remarks/>
@@ -524,48 +524,6 @@ namespace MiReferencia
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="verifySession", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class verifySessionRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg0;
-        
-        public verifySessionRequest()
-        {
-        }
-        
-        public verifySessionRequest(string arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="verifySessionResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class verifySessionResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public MiReferencia.response @return;
-        
-        public verifySessionResponse()
-        {
-        }
-        
-        public verifySessionResponse(MiReferencia.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="createFolder", WrapperNamespace="http://soap/", IsWrapped=true)]
     public partial class createFolderRequest
     {
@@ -998,6 +956,48 @@ namespace MiReferencia
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verifySession", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class verifySessionRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string arg0;
+        
+        public verifySessionRequest()
+        {
+        }
+        
+        public verifySessionRequest(string arg0)
+        {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="verifySessionResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class verifySessionResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public MiReferencia.response @return;
+        
+        public verifySessionResponse()
+        {
+        }
+        
+        public verifySessionResponse(MiReferencia.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     public interface ServiceChannel : MiReferencia.Service, System.ServiceModel.IClientChannel
     {
@@ -1072,19 +1072,6 @@ namespace MiReferencia
             MiReferencia.loginRequest inValue = new MiReferencia.loginRequest();
             inValue.arg0 = arg0;
             return ((MiReferencia.Service)(this)).loginAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> MiReferencia.Service.verifySessionAsync(MiReferencia.verifySessionRequest request)
-        {
-            return base.Channel.verifySessionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> verifySessionAsync(string arg0)
-        {
-            MiReferencia.verifySessionRequest inValue = new MiReferencia.verifySessionRequest();
-            inValue.arg0 = arg0;
-            return ((MiReferencia.Service)(this)).verifySessionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1220,6 +1207,19 @@ namespace MiReferencia
             return ((MiReferencia.Service)(this)).seeStorageTreeAsync(inValue);
         }
         
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> MiReferencia.Service.verifySessionAsync(MiReferencia.verifySessionRequest request)
+        {
+            return base.Channel.verifySessionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<MiReferencia.verifySessionResponse> verifySessionAsync(string arg0)
+        {
+            MiReferencia.verifySessionRequest inValue = new MiReferencia.verifySessionRequest();
+            inValue.arg0 = arg0;
+            return ((MiReferencia.Service)(this)).verifySessionAsync(inValue);
+        }
+        
         public virtual System.Threading.Tasks.Task OpenAsync()
         {
             return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
@@ -1243,7 +1243,7 @@ namespace MiReferencia
         {
             if ((endpointConfiguration == EndpointConfiguration.ServicePort))
             {
-                return new System.ServiceModel.EndpointAddress("http://java.bucaramanga.upb.edu.co:2376/app");
+                return new System.ServiceModel.EndpointAddress("http://java.bucaramanga.upb.edu.co/app");
             }
             throw new System.InvalidOperationException(string.Format("No se pudo encontrar un punto de conexión con el nombre \"{0}\".", endpointConfiguration));
         }
