@@ -23,7 +23,7 @@ namespace BackendNET.Controllers
                     {
                         return StatusCode(StatusCodes.Status404NotFound, new { Msg = "La respuesta del SOAP es nula" });
                     }
-                    if (response.@return.statusCode != 200)
+                    if (response.@return.statusCode != 201)
                     {
                         string errorMessage = response.@return.details;
                         if (errorMessage.Contains("Usuario no registrado"))
