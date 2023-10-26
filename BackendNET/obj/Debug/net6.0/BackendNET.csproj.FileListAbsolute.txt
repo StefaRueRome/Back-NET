@@ -226,3 +226,5 @@ C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\obj\Debug\net6.0\re
 C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\obj\Debug\net6.0\BackendNET.pdb
 C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\obj\Debug\net6.0\BackendNET.genruntimeconfig.cache
 C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\obj\Debug\net6.0\ref\BackendNET.dll
+C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\bin\Debug\net6.0\Connected Services\ReferenciaActualizada\ConnectedService.json
+C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\bin\Debug\net6.0\Newtonsoft.Json.dll
