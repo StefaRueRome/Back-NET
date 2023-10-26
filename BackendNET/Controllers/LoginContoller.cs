@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ReferenciaActualizada;
+using MiReferencia;
 
 namespace BackendNET.Controllers
 {

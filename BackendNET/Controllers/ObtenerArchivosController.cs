@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using ReferenciaActualizada;
+using MiReferencia;
 
 namespace BackendNET.Controllers
 {
