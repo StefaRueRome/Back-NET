@@ -152,7 +152,6 @@ C:\Users\T\Source\Repos\StefaRueRome\Back-NET\BackendNET\obj\Debug\net6.0\Backen
 C:\Users\T\Source\Repos\StefaRueRome\Back-NET\BackendNET\obj\Debug\net6.0\ref\BackendNET.dll
 C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\bin\Debug\net6.0\appsettings.json
-C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\bin\Debug\net6.0\Connected Services\MiReferencia\ConnectedService.json
 C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\bin\Debug\net6.0\BackendNET.exe
 C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\bin\Debug\net6.0\BackendNET.deps.json
 C:\Users\admin\Source\Repos\StefaRueRome\Back-NET\BackendNET\bin\Debug\net6.0\BackendNET.runtimeconfig.json

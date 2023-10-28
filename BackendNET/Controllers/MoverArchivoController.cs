@@ -13,7 +13,7 @@ namespace BackendNET.Controllers
     public class MoverArchivoController : ControllerBase
     {
         [HttpPost("moveFile")]
-        public async Task<IActionResult> Post([FromBody] file request)
+        public async Task<IActionResult> Post([FromBody] file request, int folderId , String newPath)
         {
             if (request == null)
             {
@@ -23,7 +23,7 @@ namespace BackendNET.Controllers
             {
                 try
                 {
-                    moveFileResponse response = await client.moveFileAsync(request.id, request.path, request.path);
+                    moveFileResponse response = await client.moveFileAsync(request.id, folderId, newPath);
                     if (response == null || response.@return == null)
                     {
                         return StatusCode(StatusCodes.Status404NotFound, new { Msg = "La respuesta del SOAP es nula" });

@@ -18,7 +18,7 @@ namespace BackendNET.Controllers
             {
                 try
                 {
-                    deleteFolderResponse response = await client.deleteFolderAsync(request);
+                    deleteFolderResponse response = await client.deleteFolderAsync(request.id);
                     if (response == null || response.@return == null)
                     {
                         return StatusCode(StatusCodes.Status404NotFound, new { Msg = "La respuesta del SOAP es nula" });

@@ -18,7 +18,7 @@ namespace BackendNET.Controllers
             {
                 try
                 {
-                    downloadFileResponse response = await client.downloadFileAsync(request);
+                    downloadFileResponse response = await client.downloadFileAsync(request.id);
                     if (response == null || response.@return == null || response?.@return == null)
                     {
                         return StatusCode(StatusCodes.Status404NotFound, new { Msg = "La respuesta del SOAP es nula" });
