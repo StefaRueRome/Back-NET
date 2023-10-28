@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\BackendNET",
-    "\\BackendNET\\Controllers"
+    ""
   ],
-  "SelectedNode": "\\BackendNET\\Controllers\\SubirArchivoController.cs",
+  "SelectedNode": "\\BackendNET.sln",
   "PreviewInSolutionExplorer": false
 }
