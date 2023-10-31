@@ -28,53 +28,53 @@ namespace ReferenciaActualizada
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<ReferenciaActualizada.loginResponse> loginAsync(ReferenciaActualizada.loginRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/deleteFileRequest", ReplyAction="http://soap/Service/deleteFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/createFolderRequest", ReplyAction="http://soap/Service/createFolderResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.deleteFileResponse> deleteFileAsync(ReferenciaActualizada.deleteFileRequest request);
+        System.Threading.Tasks.Task<ReferenciaActualizada.createFolderResponse> createFolderAsync(ReferenciaActualizada.createFolderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/uploadFileRequest", ReplyAction="http://soap/Service/uploadFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<ReferenciaActualizada.uploadFileResponse> uploadFileAsync(ReferenciaActualizada.uploadFileRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/createFolderRequest", ReplyAction="http://soap/Service/createFolderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/deleteFileRequest", ReplyAction="http://soap/Service/deleteFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.createFolderResponse> createFolderAsync(ReferenciaActualizada.createFolderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/downloadFileRequest", ReplyAction="http://soap/Service/downloadFileResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.downloadFileResponse> downloadFileAsync(ReferenciaActualizada.downloadFileRequest request);
+        System.Threading.Tasks.Task<ReferenciaActualizada.deleteFileResponse> deleteFileAsync(ReferenciaActualizada.deleteFileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/getUserFilesRequest", ReplyAction="http://soap/Service/getUserFilesResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<ReferenciaActualizada.getUserFilesResponse> getUserFilesAsync(ReferenciaActualizada.getUserFilesRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/moveFileRequest", ReplyAction="http://soap/Service/moveFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/deleteFolderRequest", ReplyAction="http://soap/Service/deleteFolderResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.moveFileResponse> moveFileAsync(ReferenciaActualizada.moveFileRequest request);
+        System.Threading.Tasks.Task<ReferenciaActualizada.deleteFolderResponse> deleteFolderAsync(ReferenciaActualizada.deleteFolderRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/getSharedFilesRequest", ReplyAction="http://soap/Service/getSharedFilesResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<ReferenciaActualizada.getSharedFilesResponse> getSharedFilesAsync(ReferenciaActualizada.getSharedFilesRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/seeStorageTreeRequest", ReplyAction="http://soap/Service/seeStorageTreeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/shareFileRequest", ReplyAction="http://soap/Service/shareFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.seeStorageTreeResponse> seeStorageTreeAsync(ReferenciaActualizada.seeStorageTreeRequest request);
+        System.Threading.Tasks.Task<ReferenciaActualizada.shareFileResponse> shareFileAsync(ReferenciaActualizada.shareFileRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/stopSharingFileRequest", ReplyAction="http://soap/Service/stopSharingFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<ReferenciaActualizada.stopSharingFileResponse> stopSharingFileAsync(ReferenciaActualizada.stopSharingFileRequest request);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/downloadFileRequest", ReplyAction="http://soap/Service/downloadFileResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        System.Threading.Tasks.Task<ReferenciaActualizada.downloadFileResponse> downloadFileAsync(ReferenciaActualizada.downloadFileRequest request);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/getSubFolderFilesRequest", ReplyAction="http://soap/Service/getSubFolderFilesResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         System.Threading.Tasks.Task<ReferenciaActualizada.getSubFolderFilesResponse> getSubFolderFilesAsync(ReferenciaActualizada.getSubFolderFilesRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/shareFileRequest", ReplyAction="http://soap/Service/shareFileResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/seeStorageTreeRequest", ReplyAction="http://soap/Service/seeStorageTreeResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.shareFileResponse> shareFileAsync(ReferenciaActualizada.shareFileRequest request);
+        System.Threading.Tasks.Task<ReferenciaActualizada.seeStorageTreeResponse> seeStorageTreeAsync(ReferenciaActualizada.seeStorageTreeRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/deleteFolderRequest", ReplyAction="http://soap/Service/deleteFolderResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://soap/Service/moveFileRequest", ReplyAction="http://soap/Service/moveFileResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.deleteFolderResponse> deleteFolderAsync(ReferenciaActualizada.deleteFolderRequest request);
+        System.Threading.Tasks.Task<ReferenciaActualizada.moveFileResponse> moveFileAsync(ReferenciaActualizada.moveFileRequest request);
     }
     
     /// <remarks/>
@@ -145,142 +145,6 @@ namespace ReferenciaActualizada
             set
             {
                 this.passwordField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://soap/")]
-    public partial class folder
-    {
-        
-        private int idField;
-        
-        private string nameField;
-        
-        private string pathField;
-        
-        private int userIdField;
-        
-        private double sizeField;
-        
-        private int nodeIdField;
-        
-        private int fatherIdField;
-        
-        private int backNodeIdField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int id
-        {
-            get
-            {
-                return this.idField;
-            }
-            set
-            {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string name
-        {
-            get
-            {
-                return this.nameField;
-            }
-            set
-            {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string path
-        {
-            get
-            {
-                return this.pathField;
-            }
-            set
-            {
-                this.pathField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public int userId
-        {
-            get
-            {
-                return this.userIdField;
-            }
-            set
-            {
-                this.userIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public double size
-        {
-            get
-            {
-                return this.sizeField;
-            }
-            set
-            {
-                this.sizeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int nodeId
-        {
-            get
-            {
-                return this.nodeIdField;
-            }
-            set
-            {
-                this.nodeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public int fatherId
-        {
-            get
-            {
-                return this.fatherIdField;
-            }
-            set
-            {
-                this.fatherIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public int backNodeId
-        {
-            get
-            {
-                return this.backNodeIdField;
-            }
-            set
-            {
-                this.backNodeIdField = value;
             }
         }
     }
@@ -424,6 +288,142 @@ namespace ReferenciaActualizada
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public int backNodeId
+        {
+            get
+            {
+                return this.backNodeIdField;
+            }
+            set
+            {
+                this.backNodeIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://soap/")]
+    public partial class folder
+    {
+        
+        private int idField;
+        
+        private string nameField;
+        
+        private string pathField;
+        
+        private int userIdField;
+        
+        private double sizeField;
+        
+        private int nodeIdField;
+        
+        private int fatherIdField;
+        
+        private int backNodeIdField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int id
+        {
+            get
+            {
+                return this.idField;
+            }
+            set
+            {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string name
+        {
+            get
+            {
+                return this.nameField;
+            }
+            set
+            {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string path
+        {
+            get
+            {
+                return this.pathField;
+            }
+            set
+            {
+                this.pathField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int userId
+        {
+            get
+            {
+                return this.userIdField;
+            }
+            set
+            {
+                this.userIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public double size
+        {
+            get
+            {
+                return this.sizeField;
+            }
+            set
+            {
+                this.sizeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int nodeId
+        {
+            get
+            {
+                return this.nodeIdField;
+            }
+            set
+            {
+                this.nodeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public int fatherId
+        {
+            get
+            {
+                return this.fatherIdField;
+            }
+            set
+            {
+                this.fatherIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
         public int backNodeId
         {
             get
@@ -670,19 +670,19 @@ namespace ReferenciaActualizada
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFile", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class deleteFileRequest
+    [System.ServiceModel.MessageContractAttribute(WrapperName="createFolder", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class createFolderRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
+        public ReferenciaActualizada.folder arg0;
         
-        public deleteFileRequest()
+        public createFolderRequest()
         {
         }
         
-        public deleteFileRequest(int arg0)
+        public createFolderRequest(ReferenciaActualizada.folder arg0)
         {
             this.arg0 = arg0;
         }
@@ -691,19 +691,19 @@ namespace ReferenciaActualizada
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class deleteFileResponse
+    [System.ServiceModel.MessageContractAttribute(WrapperName="createFolderResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class createFolderResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ReferenciaActualizada.response @return;
         
-        public deleteFileResponse()
+        public createFolderResponse()
         {
         }
         
-        public deleteFileResponse(ReferenciaActualizada.response @return)
+        public createFolderResponse(ReferenciaActualizada.response @return)
         {
             this.@return = @return;
         }
@@ -754,61 +754,19 @@ namespace ReferenciaActualizada
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="createFolder", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class createFolderRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public ReferenciaActualizada.folder arg0;
-        
-        public createFolderRequest()
-        {
-        }
-        
-        public createFolderRequest(ReferenciaActualizada.folder arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="createFolderResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class createFolderResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public ReferenciaActualizada.response @return;
-        
-        public createFolderResponse()
-        {
-        }
-        
-        public createFolderResponse(ReferenciaActualizada.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="downloadFile", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class downloadFileRequest
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFile", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class deleteFileRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int arg0;
         
-        public downloadFileRequest()
+        public deleteFileRequest()
         {
         }
         
-        public downloadFileRequest(int arg0)
+        public deleteFileRequest(int arg0)
         {
             this.arg0 = arg0;
         }
@@ -817,19 +775,19 @@ namespace ReferenciaActualizada
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="downloadFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class downloadFileResponse
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class deleteFileResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ReferenciaActualizada.response @return;
         
-        public downloadFileResponse()
+        public deleteFileResponse()
         {
         }
         
-        public downloadFileResponse(ReferenciaActualizada.response @return)
+        public deleteFileResponse(ReferenciaActualizada.response @return)
         {
             this.@return = @return;
         }
@@ -880,50 +838,40 @@ namespace ReferenciaActualizada
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="moveFile", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class moveFileRequest
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFolder", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class deleteFolderRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int arg0;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=1)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg1;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public string arg2;
-        
-        public moveFileRequest()
+        public deleteFolderRequest()
         {
         }
         
-        public moveFileRequest(int arg0, int arg1, string arg2)
+        public deleteFolderRequest(int arg0)
         {
             this.arg0 = arg0;
-            this.arg1 = arg1;
-            this.arg2 = arg2;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="moveFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class moveFileResponse
+    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFolderResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class deleteFolderResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ReferenciaActualizada.response @return;
         
-        public moveFileResponse()
+        public deleteFolderResponse()
         {
         }
         
-        public moveFileResponse(ReferenciaActualizada.response @return)
+        public deleteFolderResponse(ReferenciaActualizada.response @return)
         {
             this.@return = @return;
         }
@@ -966,132 +914,6 @@ namespace ReferenciaActualizada
         }
         
         public getSharedFilesResponse(ReferenciaActualizada.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="seeStorageTree", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class seeStorageTreeRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
-        
-        public seeStorageTreeRequest()
-        {
-        }
-        
-        public seeStorageTreeRequest(int arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="seeStorageTreeResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class seeStorageTreeResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public ReferenciaActualizada.response @return;
-        
-        public seeStorageTreeResponse()
-        {
-        }
-        
-        public seeStorageTreeResponse(ReferenciaActualizada.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="stopSharingFile", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class stopSharingFileRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
-        
-        public stopSharingFileRequest()
-        {
-        }
-        
-        public stopSharingFileRequest(int arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="stopSharingFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class stopSharingFileResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public ReferenciaActualizada.response @return;
-        
-        public stopSharingFileResponse()
-        {
-        }
-        
-        public stopSharingFileResponse(ReferenciaActualizada.response @return)
-        {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getSubFolderFiles", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class getSubFolderFilesRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public int arg0;
-        
-        public getSubFolderFilesRequest()
-        {
-        }
-        
-        public getSubFolderFilesRequest(int arg0)
-        {
-            this.arg0 = arg0;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="getSubFolderFilesResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class getSubFolderFilesResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
-        public ReferenciaActualizada.response @return;
-        
-        public getSubFolderFilesResponse()
-        {
-        }
-        
-        public getSubFolderFilesResponse(ReferenciaActualizada.response @return)
         {
             this.@return = @return;
         }
@@ -1147,19 +969,19 @@ namespace ReferenciaActualizada
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFolder", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class deleteFolderRequest
+    [System.ServiceModel.MessageContractAttribute(WrapperName="stopSharingFile", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class stopSharingFileRequest
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public int arg0;
         
-        public deleteFolderRequest()
+        public stopSharingFileRequest()
         {
         }
         
-        public deleteFolderRequest(int arg0)
+        public stopSharingFileRequest(int arg0)
         {
             this.arg0 = arg0;
         }
@@ -1168,19 +990,197 @@ namespace ReferenciaActualizada
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="deleteFolderResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
-    public partial class deleteFolderResponse
+    [System.ServiceModel.MessageContractAttribute(WrapperName="stopSharingFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class stopSharingFileResponse
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
         public ReferenciaActualizada.response @return;
         
-        public deleteFolderResponse()
+        public stopSharingFileResponse()
         {
         }
         
-        public deleteFolderResponse(ReferenciaActualizada.response @return)
+        public stopSharingFileResponse(ReferenciaActualizada.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="downloadFile", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class downloadFileRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public downloadFileRequest()
+        {
+        }
+        
+        public downloadFileRequest(int arg0)
+        {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="downloadFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class downloadFileResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ReferenciaActualizada.response @return;
+        
+        public downloadFileResponse()
+        {
+        }
+        
+        public downloadFileResponse(ReferenciaActualizada.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getSubFolderFiles", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class getSubFolderFilesRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public getSubFolderFilesRequest()
+        {
+        }
+        
+        public getSubFolderFilesRequest(int arg0)
+        {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="getSubFolderFilesResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class getSubFolderFilesResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ReferenciaActualizada.response @return;
+        
+        public getSubFolderFilesResponse()
+        {
+        }
+        
+        public getSubFolderFilesResponse(ReferenciaActualizada.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="seeStorageTree", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class seeStorageTreeRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        public seeStorageTreeRequest()
+        {
+        }
+        
+        public seeStorageTreeRequest(int arg0)
+        {
+            this.arg0 = arg0;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="seeStorageTreeResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class seeStorageTreeResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ReferenciaActualizada.response @return;
+        
+        public seeStorageTreeResponse()
+        {
+        }
+        
+        public seeStorageTreeResponse(ReferenciaActualizada.response @return)
+        {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="moveFile", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class moveFileRequest
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg0;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public int arg1;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public string arg2;
+        
+        public moveFileRequest()
+        {
+        }
+        
+        public moveFileRequest(int arg0, int arg1, string arg2)
+        {
+            this.arg0 = arg0;
+            this.arg1 = arg1;
+            this.arg2 = arg2;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="moveFileResponse", WrapperNamespace="http://soap/", IsWrapped=true)]
+    public partial class moveFileResponse
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://soap/", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified)]
+        public ReferenciaActualizada.response @return;
+        
+        public moveFileResponse()
+        {
+        }
+        
+        public moveFileResponse(ReferenciaActualizada.response @return)
         {
             this.@return = @return;
         }
@@ -1276,16 +1276,16 @@ namespace ReferenciaActualizada
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.deleteFileResponse> ReferenciaActualizada.Service.deleteFileAsync(ReferenciaActualizada.deleteFileRequest request)
+        System.Threading.Tasks.Task<ReferenciaActualizada.createFolderResponse> ReferenciaActualizada.Service.createFolderAsync(ReferenciaActualizada.createFolderRequest request)
         {
-            return base.Channel.deleteFileAsync(request);
+            return base.Channel.createFolderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ReferenciaActualizada.deleteFileResponse> deleteFileAsync(int arg0)
+        public System.Threading.Tasks.Task<ReferenciaActualizada.createFolderResponse> createFolderAsync(ReferenciaActualizada.folder arg0)
         {
-            ReferenciaActualizada.deleteFileRequest inValue = new ReferenciaActualizada.deleteFileRequest();
+            ReferenciaActualizada.createFolderRequest inValue = new ReferenciaActualizada.createFolderRequest();
             inValue.arg0 = arg0;
-            return ((ReferenciaActualizada.Service)(this)).deleteFileAsync(inValue);
+            return ((ReferenciaActualizada.Service)(this)).createFolderAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1302,29 +1302,16 @@ namespace ReferenciaActualizada
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.createFolderResponse> ReferenciaActualizada.Service.createFolderAsync(ReferenciaActualizada.createFolderRequest request)
+        System.Threading.Tasks.Task<ReferenciaActualizada.deleteFileResponse> ReferenciaActualizada.Service.deleteFileAsync(ReferenciaActualizada.deleteFileRequest request)
         {
-            return base.Channel.createFolderAsync(request);
+            return base.Channel.deleteFileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ReferenciaActualizada.createFolderResponse> createFolderAsync(ReferenciaActualizada.folder arg0)
+        public System.Threading.Tasks.Task<ReferenciaActualizada.deleteFileResponse> deleteFileAsync(int arg0)
         {
-            ReferenciaActualizada.createFolderRequest inValue = new ReferenciaActualizada.createFolderRequest();
+            ReferenciaActualizada.deleteFileRequest inValue = new ReferenciaActualizada.deleteFileRequest();
             inValue.arg0 = arg0;
-            return ((ReferenciaActualizada.Service)(this)).createFolderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.downloadFileResponse> ReferenciaActualizada.Service.downloadFileAsync(ReferenciaActualizada.downloadFileRequest request)
-        {
-            return base.Channel.downloadFileAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ReferenciaActualizada.downloadFileResponse> downloadFileAsync(int arg0)
-        {
-            ReferenciaActualizada.downloadFileRequest inValue = new ReferenciaActualizada.downloadFileRequest();
-            inValue.arg0 = arg0;
-            return ((ReferenciaActualizada.Service)(this)).downloadFileAsync(inValue);
+            return ((ReferenciaActualizada.Service)(this)).deleteFileAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1341,18 +1328,16 @@ namespace ReferenciaActualizada
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.moveFileResponse> ReferenciaActualizada.Service.moveFileAsync(ReferenciaActualizada.moveFileRequest request)
+        System.Threading.Tasks.Task<ReferenciaActualizada.deleteFolderResponse> ReferenciaActualizada.Service.deleteFolderAsync(ReferenciaActualizada.deleteFolderRequest request)
         {
-            return base.Channel.moveFileAsync(request);
+            return base.Channel.deleteFolderAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ReferenciaActualizada.moveFileResponse> moveFileAsync(int arg0, int arg1, string arg2)
+        public System.Threading.Tasks.Task<ReferenciaActualizada.deleteFolderResponse> deleteFolderAsync(int arg0)
         {
-            ReferenciaActualizada.moveFileRequest inValue = new ReferenciaActualizada.moveFileRequest();
+            ReferenciaActualizada.deleteFolderRequest inValue = new ReferenciaActualizada.deleteFolderRequest();
             inValue.arg0 = arg0;
-            inValue.arg1 = arg1;
-            inValue.arg2 = arg2;
-            return ((ReferenciaActualizada.Service)(this)).moveFileAsync(inValue);
+            return ((ReferenciaActualizada.Service)(this)).deleteFolderAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1366,45 +1351,6 @@ namespace ReferenciaActualizada
             ReferenciaActualizada.getSharedFilesRequest inValue = new ReferenciaActualizada.getSharedFilesRequest();
             inValue.arg0 = arg0;
             return ((ReferenciaActualizada.Service)(this)).getSharedFilesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.seeStorageTreeResponse> ReferenciaActualizada.Service.seeStorageTreeAsync(ReferenciaActualizada.seeStorageTreeRequest request)
-        {
-            return base.Channel.seeStorageTreeAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ReferenciaActualizada.seeStorageTreeResponse> seeStorageTreeAsync(int arg0)
-        {
-            ReferenciaActualizada.seeStorageTreeRequest inValue = new ReferenciaActualizada.seeStorageTreeRequest();
-            inValue.arg0 = arg0;
-            return ((ReferenciaActualizada.Service)(this)).seeStorageTreeAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.stopSharingFileResponse> ReferenciaActualizada.Service.stopSharingFileAsync(ReferenciaActualizada.stopSharingFileRequest request)
-        {
-            return base.Channel.stopSharingFileAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ReferenciaActualizada.stopSharingFileResponse> stopSharingFileAsync(int arg0)
-        {
-            ReferenciaActualizada.stopSharingFileRequest inValue = new ReferenciaActualizada.stopSharingFileRequest();
-            inValue.arg0 = arg0;
-            return ((ReferenciaActualizada.Service)(this)).stopSharingFileAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.getSubFolderFilesResponse> ReferenciaActualizada.Service.getSubFolderFilesAsync(ReferenciaActualizada.getSubFolderFilesRequest request)
-        {
-            return base.Channel.getSubFolderFilesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<ReferenciaActualizada.getSubFolderFilesResponse> getSubFolderFilesAsync(int arg0)
-        {
-            ReferenciaActualizada.getSubFolderFilesRequest inValue = new ReferenciaActualizada.getSubFolderFilesRequest();
-            inValue.arg0 = arg0;
-            return ((ReferenciaActualizada.Service)(this)).getSubFolderFilesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1422,16 +1368,70 @@ namespace ReferenciaActualizada
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ReferenciaActualizada.deleteFolderResponse> ReferenciaActualizada.Service.deleteFolderAsync(ReferenciaActualizada.deleteFolderRequest request)
+        System.Threading.Tasks.Task<ReferenciaActualizada.stopSharingFileResponse> ReferenciaActualizada.Service.stopSharingFileAsync(ReferenciaActualizada.stopSharingFileRequest request)
         {
-            return base.Channel.deleteFolderAsync(request);
+            return base.Channel.stopSharingFileAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ReferenciaActualizada.deleteFolderResponse> deleteFolderAsync(int arg0)
+        public System.Threading.Tasks.Task<ReferenciaActualizada.stopSharingFileResponse> stopSharingFileAsync(int arg0)
         {
-            ReferenciaActualizada.deleteFolderRequest inValue = new ReferenciaActualizada.deleteFolderRequest();
+            ReferenciaActualizada.stopSharingFileRequest inValue = new ReferenciaActualizada.stopSharingFileRequest();
             inValue.arg0 = arg0;
-            return ((ReferenciaActualizada.Service)(this)).deleteFolderAsync(inValue);
+            return ((ReferenciaActualizada.Service)(this)).stopSharingFileAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ReferenciaActualizada.downloadFileResponse> ReferenciaActualizada.Service.downloadFileAsync(ReferenciaActualizada.downloadFileRequest request)
+        {
+            return base.Channel.downloadFileAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ReferenciaActualizada.downloadFileResponse> downloadFileAsync(int arg0)
+        {
+            ReferenciaActualizada.downloadFileRequest inValue = new ReferenciaActualizada.downloadFileRequest();
+            inValue.arg0 = arg0;
+            return ((ReferenciaActualizada.Service)(this)).downloadFileAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ReferenciaActualizada.getSubFolderFilesResponse> ReferenciaActualizada.Service.getSubFolderFilesAsync(ReferenciaActualizada.getSubFolderFilesRequest request)
+        {
+            return base.Channel.getSubFolderFilesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ReferenciaActualizada.getSubFolderFilesResponse> getSubFolderFilesAsync(int arg0)
+        {
+            ReferenciaActualizada.getSubFolderFilesRequest inValue = new ReferenciaActualizada.getSubFolderFilesRequest();
+            inValue.arg0 = arg0;
+            return ((ReferenciaActualizada.Service)(this)).getSubFolderFilesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ReferenciaActualizada.seeStorageTreeResponse> ReferenciaActualizada.Service.seeStorageTreeAsync(ReferenciaActualizada.seeStorageTreeRequest request)
+        {
+            return base.Channel.seeStorageTreeAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ReferenciaActualizada.seeStorageTreeResponse> seeStorageTreeAsync(int arg0)
+        {
+            ReferenciaActualizada.seeStorageTreeRequest inValue = new ReferenciaActualizada.seeStorageTreeRequest();
+            inValue.arg0 = arg0;
+            return ((ReferenciaActualizada.Service)(this)).seeStorageTreeAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ReferenciaActualizada.moveFileResponse> ReferenciaActualizada.Service.moveFileAsync(ReferenciaActualizada.moveFileRequest request)
+        {
+            return base.Channel.moveFileAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<ReferenciaActualizada.moveFileResponse> moveFileAsync(int arg0, int arg1, string arg2)
+        {
+            ReferenciaActualizada.moveFileRequest inValue = new ReferenciaActualizada.moveFileRequest();
+            inValue.arg0 = arg0;
+            inValue.arg1 = arg1;
+            inValue.arg2 = arg2;
+            return ((ReferenciaActualizada.Service)(this)).moveFileAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
@@ -1457,7 +1457,7 @@ namespace ReferenciaActualizada
         {
             if ((endpointConfiguration == EndpointConfiguration.ServicePort))
             {
-                return new System.ServiceModel.EndpointAddress("http://localhost:2376/app");
+                return new System.ServiceModel.EndpointAddress("http://10.152.164.113:2376/app");
             }
             throw new System.InvalidOperationException(string.Format("No se pudo encontrar un punto de conexión con el nombre \"{0}\".", endpointConfiguration));
         }
